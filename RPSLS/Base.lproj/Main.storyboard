@@ -81,11 +81,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="RPSLS" id="zb3-hp-yxj"/>
                     <connections>
-                        <outlet property="lizardImageView" destination="Dhn-Od-BZW" id="XdN-16-byt"/>
-                        <outlet property="paperImageView" destination="oWk-lD-rLJ" id="BY8-zF-vpU"/>
-                        <outlet property="rockImageView" destination="1yx-8I-P3v" id="vm8-Pl-fXS"/>
-                        <outlet property="scissorsImageView" destination="jre-PS-Pdf" id="Pc6-yi-QZN"/>
-                        <outlet property="spockImageView" destination="YLV-ro-WeX" id="ssP-52-kx2"/>
+                        <outlet property="lizard" destination="Dhn-Od-BZW" id="Xyy-hl-mMw"/>
+                        <outlet property="paper" destination="oWk-lD-rLJ" id="a4g-gA-qHR"/>
+                        <outlet property="rock" destination="1yx-8I-P3v" id="sxm-vl-Nl6"/>
+                        <outlet property="scissors" destination="jre-PS-Pdf" id="Gfi-eh-8YP"/>
+                        <outlet property="spock" destination="YLV-ro-WeX" id="Lwu-Gd-H9U"/>
                         <segue destination="JBA-fd-IKP" kind="show" identifier="ResultsSeque" id="sYN-jS-E9W"/>
                     </connections>
                 </viewController>
