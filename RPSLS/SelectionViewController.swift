@@ -20,6 +20,8 @@ class SelectionViewController: UIViewController {
         return UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
     }
 
+    private var selection: Selection?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +33,24 @@ class SelectionViewController: UIViewController {
     }
 
     @objc private func imageTapped(_ sender: UITapGestureRecognizer) {
+        guard let view = sender.view else { return }
+
+        switch view {
+        case rock:
+            selection = .rock
+        case paper:
+            selection = .paper
+        case scissors:
+            selection = .scissors
+        case lizard:
+            selection = .lizard
+        case spock:
+            selection = .spock
+        default:
+            return
+        }
+
+        performSegue(withIdentifier: "ResultsSeque", sender: nil)
     }
 }
 
