@@ -52,5 +52,13 @@ class SelectionViewController: UIViewController {
 
         performSegue(withIdentifier: "ResultsSeque", sender: nil)
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultsViewController = segue.destination as? ResultsViewController else {
+            return
+        }
+
+        resultsViewController.playerSelection = selection
+    }
 }
 
