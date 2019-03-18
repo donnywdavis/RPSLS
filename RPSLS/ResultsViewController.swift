@@ -24,7 +24,7 @@ class ResultsViewController: UIViewController {
     }
 
     private func playGame() {
-        let skyNetSelection = Selection(rawValue: Int.random(in: 0...2)) ?? .rock
+        let skyNetSelection = Selection(rawValue: Int.random(in: 0...4)) ?? .rock
 
         switch (playerSelection, skyNetSelection) {
         case (.rock?, .rock),
