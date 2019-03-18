@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EVF-Zr-GXF">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--RPSLS-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectionViewController" id="BYZ-38-t0r" customClass="SelectionViewController" customModule="RPSLS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lWs-lf-d7N">
+                                <rect key="frame" x="37.666666666666657" y="191" width="300" height="430"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pu9-tZ-RFz">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="130"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="1yx-8I-P3v">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="BPT-1U-Xf2"/>
+                                                    <constraint firstAttribute="height" constant="130" id="j3d-1w-vGm"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="oWk-lD-rLJ">
+                                                <rect key="frame" x="160" y="0.0" width="140" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="l2n-Iz-95A"/>
+                                                    <constraint firstAttribute="height" constant="130" id="tO6-Uh-zuo"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" axis="vertical"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TJ7-oh-h4o">
+                                        <rect key="frame" x="0.0" y="150" width="300" height="130"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scissors" translatesAutoresizingMaskIntoConstraints="NO" id="jre-PS-Pdf">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="9cQ-Zl-frt"/>
+                                                    <constraint firstAttribute="width" constant="140" id="LxF-Bw-JXH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lizard" translatesAutoresizingMaskIntoConstraints="NO" id="Dhn-Od-BZW">
+                                                <rect key="frame" x="160" y="0.0" width="140" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="EwB-6z-KbE"/>
+                                                    <constraint firstAttribute="height" constant="130" id="h8d-h5-JB1"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" axis="vertical"/>
+                                    </stackView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spock" translatesAutoresizingMaskIntoConstraints="NO" id="YLV-ro-WeX">
+                                        <rect key="frame" x="0.0" y="300" width="140" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="Nye-OT-RFs"/>
+                                            <constraint firstAttribute="height" constant="130" id="lQa-m9-v1b"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lWs-lf-d7N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2R7-As-8QX"/>
+                            <constraint firstItem="lWs-lf-d7N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gdw-1A-J9l"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="RPSLS" id="zb3-hp-yxj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1061.5999999999999" y="-564.53201970443354"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GYN-xY-rgA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVF-Zr-GXF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zvm-O9-Q26">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PLd-WJ-qvO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N04-Xl-vMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="-564.46776611694156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lizard" width="337" height="335"/>
+        <image name="paper" width="336" height="335"/>
+        <image name="rock" width="335" height="335"/>
+        <image name="scissors" width="336" height="335"/>
+        <image name="spock" width="168.5" height="167.5"/>
+    </resources>
 </document>
