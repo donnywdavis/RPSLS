@@ -10,6 +10,11 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+    @IBOutlet weak var resultsLabel: UILabel!
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var winnerSelection: UIImageView!
+    @IBOutlet weak var loserSelection: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

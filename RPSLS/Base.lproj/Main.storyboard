@@ -148,6 +148,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yIF-90-NDb"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="UYO-LK-nZ0" id="5yD-Kl-ZkR"/>
+                        <outlet property="loserSelection" destination="br5-L0-vbd" id="vnh-1K-So4"/>
+                        <outlet property="resultsLabel" destination="iEg-kz-Sm6" id="9Tb-xR-5gv"/>
+                        <outlet property="winnerSelection" destination="rAS-0L-Opn" id="TOP-q1-9VQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0TF-GR-fAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
