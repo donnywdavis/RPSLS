@@ -80,10 +80,73 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="RPSLS" id="zb3-hp-yxj"/>
+                    <connections>
+                        <segue destination="JBA-fd-IKP" kind="show" identifier="ResultsSeque" id="sYN-jS-E9W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1061.5999999999999" y="-564.53201970443354"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="zzR-3U-E9N">
+            <objects>
+                <viewController storyboardIdentifier="ResultsViewController" id="JBA-fd-IKP" customClass="ResultsViewController" customModule="RPSLS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9BQ-lg-0Lv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="R93-7d-n9Q">
+                                <rect key="frame" x="112.00000000000001" y="189" width="151.33333333333337" height="434"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Win!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEg-kz-Sm6">
+                                        <rect key="frame" x="0.0" y="0.0" width="151.33333333333334" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4hr-6V-epI">
+                                        <rect key="frame" x="5.6666666666666714" y="98" width="140" height="336"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rAS-0L-Opn">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="130"/>
+                                                <color key="backgroundColor" red="0.56799299999999997" green="0.83212200000000003" blue="0.38449800000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="9o0-O8-88S"/>
+                                                    <constraint firstAttribute="height" constant="130" id="HrG-Uh-a1r"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYO-LK-nZ0">
+                                                <rect key="frame" x="32.999999999999979" y="150" width="73.666666666666686" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="br5-L0-vbd">
+                                                <rect key="frame" x="0.0" y="206" width="140" height="130"/>
+                                                <color key="backgroundColor" red="0.98911700000000002" green="0.41558" blue="0.36568400000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="4Gu-qO-vPy"/>
+                                                    <constraint firstAttribute="width" constant="140" id="WOG-w6-7WG"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R93-7d-n9Q" firstAttribute="centerY" secondItem="9BQ-lg-0Lv" secondAttribute="centerY" id="UaK-sY-tim"/>
+                            <constraint firstItem="R93-7d-n9Q" firstAttribute="centerX" secondItem="9BQ-lg-0Lv" secondAttribute="centerX" id="tnc-gc-wHO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yIF-90-NDb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0TF-GR-fAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1999" y="-565"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GYN-xY-rgA">
